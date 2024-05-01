@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio ShowCase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home">
+    <div class="wrapper">
+        <!-- Menu -->
+        <nav class="menu">
+            <div class="menu__logo">
+                <a href="index.html">jd</a>
+            </div>
+            <div class="menu__items">
+                <div class="menu__items-link active">
+                    <a href="index.html">Projects</a>
+                </div>
+                <div class="menu__items-link">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Horizontal scroll items -->
+        <div class="container">
+            <div class="container__item container__item-header">
+                <h1>
+                    John Doe, <br />
+                    Graphic Design
+                </h1>
+            </div>
+
+            <div class="container__item container__item1">
+                <h1 class="container__item-title">
+                    <a href="project.html">Asterisks</a>
+                </h1>
+            </div>
+            <div class="container__item container__item2">
+                <h1 class="container__item-title">
+                    <a href="project.html">Unlocked</a>
+                </h1>
+            </div>
+            <div class="container__item container__item3">
+                <h1 class="container__item-title">
+                    <a href="project.html">Offbeat</a>
+                </h1>
+            </div>
+            <div class="container__item container__item4">
+                <h1 class="container__item-title">
+                    <a href="project.html">Brutal</a>
+                </h1>
+            </div>
+            <div class="container__item container__item5">
+                <h1 class="container__item-title">
+                    <a href="project.html">MouthWash</a>
+                </h1>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./js/horizontalScroll.js"></script>
+    <script>
+        let blocks = document.getElementsByClassName("container__item");
+        let container = document.getElementsByClassName("container");
+        let hs = new HorizontalScroll.default({
+            blocks: blocks,
+            container: container,
+            isAnimated: true,
+            springEffect: 0.8,
+        });
+
+    </script>
+
+</body>
+</html>
